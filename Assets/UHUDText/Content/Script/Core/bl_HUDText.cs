@@ -11,7 +11,7 @@ public class bl_HUDText : MonoBehaviour {
     public GameType m_Type = GameType.Mode3D;
 
     /// <summary>
-    /// UI Prefab to instatantiate
+    /// UI Prefab to instatantiate。可以用来实例化名字板
     /// </summary>
     public GameObject TextPrefab;
     [Space(10)]
@@ -309,6 +309,7 @@ public class bl_HUDText : MonoBehaviour {
             t.PlayAnimation((int)tat,info.AnimationSpeed);
             return;
         }
+        //创建名字板实体
         GameObject prefab = (info.TextPrefab == null) ? TextPrefab : info.TextPrefab;
         //Create new text info to instantiate 
         GameObject go = Instantiate(prefab) as GameObject;

@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
+//挂载在预制体上脚本，用于控制播放飘字动画等
 public class bl_Text : MonoBehaviour
 {
     //Use this if the Text prefabs have more than a UI component
